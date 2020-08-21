@@ -53,14 +53,16 @@ Download one extract, and from that extract, use 1 example CSV as input
 
 - Java 11
 - Spring Boot
-- Spring Security
 - Hibernate
-- H2 Database (in-memory)
+- Swagger
+- MySQL 8
 - JUnit
 - Mockito
+- Postman
 
-### Setup:
+### Setup (Note: this setup is for a machine running Linux Ubuntu):
 
+- Install database following the instructions in this link -> https://computingforgeeks.com/how-to-install-mysql-8-0-on-ubuntu-linux/
 - Clone project to a folder
 - Run the application with:
   - _mvn clean install_

@@ -46,3 +46,28 @@ Name: Dublin Bus GPS sample data from Dublin City Council
 
  
 Download one extract, and from that extract, use 1 example CSV as input
+
+
+
+### Tech Stack:
+
+- Java 11
+- Spring Boot
+- Spring Security
+- Hibernate
+- H2 Database (in-memory)
+- JUnit
+- Mockito
+
+### Setup:
+
+- Clone project to a folder
+- Run the application with:
+  - _mvn clean install_
+  - _mvn spring-boot:run_
+- Test the application with:
+  - _mvn test_ -> run all tests
+  - _mvn -Dtest=TestClass test_ -> run a single test class
+  - _mvn -Dtest=TestClass1,TestClass2 test_ -> run multiple test classes
+- Package the application with _mvn package_
+- Test using Postman

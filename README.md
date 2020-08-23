@@ -64,6 +64,9 @@ Download one extract, and from that extract, use 1 example CSV as input
 
 - Install database following the instructions in this link -> https://computingforgeeks.com/how-to-install-mysql-8-0-on-ubuntu-linux/
 - Clone project to a folder
+- Change the line _LOAD DATA LOCAL INFILE '~/Desktop/Personal_Projects/Daimler_Technical_Exercise/database_resources/siri.20121123.csv'_ in the _data_loader_script.sql_ to match the path where you have your CSV file
+- Access the database through a terminal using _mysql --local_infile=1 -u root -p_ where password is equal to _root_ and execute the commancd _set global local_infile=true_ 
+- Run the command _source [path_to_script]/data_loader_script.sql_ and the database will be populated with the information in the CSV file
 - Run the application with:
   - _mvn clean install_
   - _mvn spring-boot:run_

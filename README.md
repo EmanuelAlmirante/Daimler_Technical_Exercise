@@ -84,4 +84,4 @@ The documentation of this API can be found at _http://localhost:8080/swagger-ui.
 
 The API endpoints are also documented below, as well as some examples requests made to the API.
 
-Note that the datime format is the following -> _yyyyMMddHHmmssSSS_.
+Note that the datime format is the following -> _yyyyMMddHHmmssSSS_

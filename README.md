@@ -76,3 +76,10 @@ Download one extract, and from that extract, use 1 example CSV as input
   - _mvn -Dtest=TestClass1,TestClass2 test_ -> run multiple test classes
 - Package the application with _mvn package_
 - Test using Postman
+
+
+## Endpoints:
+
+The documentation of this API can be found at _http://localhost:8080/swagger-ui.html/_ (Note: you need to initialize the application to access this link).
+
+The API endpoints are also documented below, as well as some examples requests made to the API.

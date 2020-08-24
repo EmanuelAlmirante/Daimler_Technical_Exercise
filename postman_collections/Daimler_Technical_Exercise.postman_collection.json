@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "ba7b10a7-2598-4ce3-8c17-b5976c60364e",
+		"name": "Daimler_Technical_Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/daimler/api/gps-data/running-operators?starttime=20121123080000000&endtime=20121123080001000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/daimler/api/gps-data/running-operators?starttime=20121123080000000&endtime=20121123080001000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"daimler",
+						"api",
+						"gps-data",
+						"running-operators"
+					],
+					"query": [
+						{
+							"key": "starttime",
+							"value": "20121123080000000"
+						},
+						{
+							"key": "endtime",
+							"value": "20121123080001000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/daimler/api/gps-data/vehicle-ids?starttime=20121123080000000&endtime=20121123080001000&operator=PO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/daimler/api/gps-data/vehicle-ids?starttime=20121123080000000&endtime=20121123080001000&operator=PO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"daimler",
+						"api",
+						"gps-data",
+						"vehicle-ids"
+					],
+					"query": [
+						{
+							"key": "starttime",
+							"value": "20121123080000000"
+						},
+						{
+							"key": "endtime",
+							"value": "20121123080001000"
+						},
+						{
+							"key": "operator",
+							"value": "PO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/daimler/api/gps-data/at-stop?starttime=20121123080000000&endtime=20121123080001000&operator=PO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/daimler/api/gps-data/at-stop?starttime=20121123080000000&endtime=20121123080001000&operator=PO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"daimler",
+						"api",
+						"gps-data",
+						"at-stop"
+					],
+					"query": [
+						{
+							"key": "starttime",
+							"value": "20121123080000000"
+						},
+						{
+							"key": "endtime",
+							"value": "20121123080001000"
+						},
+						{
+							"key": "operator",
+							"value": "PO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/daimler/api/gps-data/gps-tracing?starttime=20121123080000000&endtime=20121123080100000&vehicleid=33568",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/daimler/api/gps-data/gps-tracing?starttime=20121123080000000&endtime=20121123080100000&vehicleid=33568",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"daimler",
+						"api",
+						"gps-data",
+						"gps-tracing"
+					],
+					"query": [
+						{
+							"key": "starttime",
+							"value": "20121123080000000"
+						},
+						{
+							"key": "endtime",
+							"value": "20121123080100000"
+						},
+						{
+							"key": "vehicleid",
+							"value": "33568"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

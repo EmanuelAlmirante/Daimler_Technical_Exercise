@@ -24,7 +24,7 @@ CREATE TABLE gps_data
     stop_id            INT(10),
     at_stop            BOOLEAN,
 	id                 BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY
-) AUTO_INCREMENT = 1;
+);
 
 
 LOAD DATA LOCAL INFILE '~/Desktop/Personal_Projects/Daimler_Technical_Exercise/database_resources/siri.20121123.csv' 

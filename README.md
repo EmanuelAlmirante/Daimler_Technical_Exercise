@@ -85,3 +85,186 @@ The documentation of this API can be found at _http://localhost:8080/swagger-ui.
 The API endpoints are also documented below, as well as some examples requests made to the API.
 
 Note that the datime format is the following -> _yyyyMMddHHmmssSSS_
+
+* List of running operators:
+      
+     **Given a time frame [start-time, end-time], what is the list of running operators?**
+     
+      GET daimler/api/gps-data/running-operators?starttime={startime}&endtime={endtime}
+      
+     URL: 
+     
+      http://localhost:8080/daimler/api/gps-data/running-operators?starttime=20121123080000000&endtime=20121123080001000
+      
+     Response status:
+     
+      200 OK
+      
+     Body:
+      
+      Empty
+      
+     Return:
+     
+      [
+          {
+              "operator": "HN"
+          },
+          {
+              "operator": "CF"
+          },
+          {
+              "operator": "D1"
+          },
+          {
+              "operator": "PO"
+          },
+          {
+              "operator": "SL"
+          },
+          ...
+      ]
+      
+* List of vehicle IDs:
+
+     **Given a time frame [start-time, end-time] and an Operator, what is the list of vehicle IDs?**
+     
+      GET daimler/api/gps-data/vehicle-ids?starttime={startime}&endtime={endtime}&operator={operator}
+      
+     URL:
+     
+      http://localhost:8080/daimler/api/gps-data/vehicle-ids?starttime=20121123080000000&endtime=20121123080001000&operator=PO
+      
+     Response status:
+     
+      200 OK
+      
+     Body:
+      
+      Empty
+      
+     Return:
+     
+      [
+          {
+              "operator": "PO",
+              "vehicleId": 33568
+          },
+          {
+              "operator": "PO",
+              "vehicleId": 36063
+          },
+          {
+              "operator": "PO",
+              "vehicleId": 33573
+          },
+          {
+              "operator": "PO",
+              "vehicleId": 33588
+          },
+          {
+              "operator": "PO",
+              "vehicleId": 33314
+          },
+          ...
+      ]
+      
+* List of vehicles at a stop:
+
+     **Given a time frame [start-time, end-time] and a fleet, which vehicles are at a stop?**
+     
+      GET daimler/api/gps-data/at-stop?starttime={startime}&endtime={endtime}&operator={operator}
+      
+     URL:
+     
+      http://localhost:8080/daimler/api/gps-data/at-stop?starttime=20121123080000000&endtime=20121123080001000&operator=PO
+      
+     Response status:
+     
+      200 OK
+      
+     Body:
+      
+      Empty
+      
+     Return:
+     
+      [
+          {
+              "atStop": true,
+              "operator": "PO",
+              "vehicleId": 33568,
+              "stopId": 1715
+          },
+          {
+              "atStop": true,
+              "operator": "PO",
+              "vehicleId": 36063,
+              "stopId": 4496
+          },
+          {
+              "atStop": true,
+              "operator": "PO",
+              "vehicleId": 33314,
+              "stopId": 73
+          },
+          {
+              "atStop": true,
+              "operator": "PO",
+              "vehicleId": 33600,
+              "stopId": 1829
+          },
+          {
+              "atStop": true,
+              "operator": "PO",
+              "vehicleId": 33431,
+              "stopId": 4747
+          }
+      ]
+      
+* List of vehicle GPS coordinates ordered by timestamp:
+
+     **Given a time frame [start-time, end-time] and a vehicle, return the trace of that vehicle (GPS entries, ordered by timestamp).**
+     
+      GET daimler/api/gps-data/gps-tracing?starttime={startime}&endtime={endtime}&vehicleid={vehicleid}
+      
+     URL:
+     
+      http://localhost:8080/daimler/api/gps-data/gps-tracing?starttime=20121123080000000&endtime=20121123080100000&vehicleid=33568
+      
+     Response status:
+     
+      200 OK
+      
+     Body:
+      
+      Empty
+      
+     Return:
+     
+      [
+          {
+              "timestamp": 1353657601000000,
+              "lat": 53.347733,
+              "vehicleId": 33568,
+              "lon": -6.28225
+          },
+          {
+              "timestamp": 1353657624000000,
+              "lat": 53.347733,
+              "vehicleId": 33568,
+              "lon": -6.28225
+          },
+          {
+              "timestamp": 1353657642000000,
+              "lat": 53.347275,
+              "vehicleId": 33568,
+              "lon": -6.282392
+          },
+          {
+              "timestamp": 1353657660000000,
+              "lat": 53.347275,
+              "vehicleId": 33568,
+              "lon": -6.282392
+          }
+      ]

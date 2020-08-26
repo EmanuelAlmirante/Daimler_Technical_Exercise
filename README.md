@@ -246,25 +246,25 @@ Note that the datime format is the following -> _yyyyMMddHHmmssSSS_
           {
               "timestamp": 1353657601000000,
               "lat": 53.347733,
-              "vehicleId": 33568,
-              "lon": -6.28225
+              "lon": -6.28225,
+              "vehicleId": 33568
           },
           {
               "timestamp": 1353657624000000,
               "lat": 53.347733,
-              "vehicleId": 33568,
-              "lon": -6.28225
+              "lon": -6.28225,
+              "vehicleId": 33568
           },
           {
               "timestamp": 1353657642000000,
               "lat": 53.347275,
-              "vehicleId": 33568,
-              "lon": -6.282392
+              "lon": -6.282392,
+              "vehicleId": 33568
           },
           {
               "timestamp": 1353657660000000,
               "lat": 53.347275,
-              "vehicleId": 33568,
-              "lon": -6.282392
+              "lon": -6.282392,
+              "vehicleId": 33568
           }
       ]

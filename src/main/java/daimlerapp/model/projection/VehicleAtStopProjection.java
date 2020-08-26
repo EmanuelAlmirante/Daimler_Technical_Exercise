@@ -9,6 +9,10 @@ public interface VehicleAtStopProjection {
 
     void setVehicleId(Integer vehicleId);
 
+    Integer getStopId();
+
+    void setStopId(Integer stopId);
+
     Boolean getAtStop();
 
     void setAtStop(Boolean atStop);

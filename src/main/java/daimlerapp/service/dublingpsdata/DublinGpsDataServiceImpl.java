@@ -1,7 +1,6 @@
 package daimlerapp.service.dublingpsdata;
 
 import daimlerapp.exception.BusinessException;
-import daimlerapp.model.DublinGpsDataModel;
 import daimlerapp.model.projection.RunningOperatorsProjection;
 import daimlerapp.model.projection.VehicleAtStopProjection;
 import daimlerapp.model.projection.VehicleIdProjection;

@@ -75,7 +75,7 @@ Download one extract, and from that extract, use 1 example CSV as input
   - _mvn -Dtest=TestClass test_ -> run a single test class
   - _mvn -Dtest=TestClass1,TestClass2 test_ -> run multiple test classes
 - Package the application with _mvn package_
-- Test using Postman
+- Test using Postman and the file in the folder _postman_collections_
 
 
 ## Endpoints:
